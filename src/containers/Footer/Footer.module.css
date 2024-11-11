@@ -1,0 +1,102 @@
+.footer {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.footerCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f3f5;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+.yellow {
+  background-color: #ffbd44;
+}
+.green {
+  background-color: #00ca4e;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footerSection {
+  flex: 1;
+}
+
+.footerSection h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.footerSection h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.footerSection p,
+.footerSection ul {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footerSection ul li {
+  margin-bottom: 0.25rem;
+}
+
+.footerSection a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerSection a:hover {
+  color: #007bff;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f3f5;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .footerSection {
+    margin-bottom: 1.5rem;
+  }
+}

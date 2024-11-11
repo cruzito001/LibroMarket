@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./BookSection.module.css";
-import { books } from "../BookSection/BooksData";
+import { books } from "./BooksData";
 
 export default function BookSection() {
   return (

@@ -17,19 +17,30 @@ export default function Header() {
           </div>
         </div>
         <nav className={styles.nav}>
-          <div className={styles.logo}>📚 LibroMarket</div>
+          <div className={styles.logo}>
+            <span className={styles.icon}>📚</span>
+            <span className={styles.text}>LibroMarket</span>
+          </div>
           <ul className={styles.navLinks}>
             <li>
-              <a href="#home">Inicio</a>
+              <a href="#home" className={styles.navLink}>
+                Inicio
+              </a>
             </li>
             <li>
-              <a href="#books">Libros</a>
+              <a href="#books" className={styles.navLink}>
+                Libros
+              </a>
             </li>
             <li>
-              <a href="#about">Nosotros</a>
+              <a href="#about" className={styles.navLink}>
+                Nosotros
+              </a>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
+              <a href="#contact" className={styles.navLink}>
+                Contacto
+              </a>
             </li>
           </ul>
         </nav>

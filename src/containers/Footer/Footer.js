@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyright}>
-          © 2023 LibroMarket. Todos los derechos reservados.
+          © 2024 LibroMarket. Todos los derechos reservados.
         </div>
       </div>
     </footer>

@@ -4,12 +4,13 @@
 }
 
 .footerCard {
+  width: 100%;
+  max-width: 100%;
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  max-width: 1200px;
   margin: 0 auto;
 }
 

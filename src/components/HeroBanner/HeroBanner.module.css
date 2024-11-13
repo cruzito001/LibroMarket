@@ -9,6 +9,12 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .tools {
@@ -27,6 +33,11 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .box {
+  transform: scale(1.2);
 }
 
 .red {

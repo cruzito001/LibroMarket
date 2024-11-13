@@ -9,6 +9,8 @@
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footerCard:hover {
@@ -50,17 +52,23 @@
 
 .footerContent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footerSection {
   flex: 1;
+  max-width: 300px;
+  padding: 0 1rem;
 }
 
 .footerSection h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #333;
   transition: color 0.3s ease;
 }
@@ -85,7 +93,7 @@
 }
 
 .footerSection ul li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .footerSection a {
@@ -116,9 +124,16 @@
 @media (max-width: 768px) {
   .footerContent {
     flex-direction: column;
+    align-items: center;
   }
 
   .footerSection {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footerSection:last-child {
+    margin-bottom: 0;
   }
 }

@@ -26,10 +26,16 @@ export default function BookSection() {
                   src={book.coverImage}
                   alt={book.title}
                   className={styles.bookCover}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/placeholder.svg?height=250&width=200";
+                  }}
                 />
-                <h3 className={styles.bookTitle}>{book.title}</h3>
-                <p className={styles.bookAuthor}>{book.author}</p>
-                <p className={styles.bookPrice}>${book.price.toFixed(2)}</p>
+                <div className={styles.bookInfo}>
+                  <h3 className={styles.bookTitle}>{book.title}</h3>
+                  <p className={styles.bookAuthor}>{book.author}</p>
+                  <p className={styles.bookPrice}>${book.price.toFixed(2)}</p>
+                </div>
               </div>
             ))}
           </div>

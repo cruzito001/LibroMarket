@@ -9,7 +9,6 @@
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -18,7 +17,8 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.tools {
+.tools,
+.modalTools {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -81,6 +81,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .navLinks li {
@@ -117,6 +118,74 @@
   transform: scaleX(1);
 }
 
+.cartContainer {
+  position: relative;
+}
+
+.cartLink {
+  font-size: 1.5rem;
+}
+
+.cartModal {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.cartPreview {
+  padding: 1rem;
+}
+
+.cartPreview h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.viewCartButton {
+  display: inline-block;
+  width: 50%;
+  padding: 0.5rem;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.viewCartButton::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: white;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.viewCartButton:hover::before {
+  width: 105%;
+}
+
+.viewCartButton:hover {
+  color: rgb(15, 15, 15);
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -131,5 +200,10 @@
   .navLinks li {
     margin-left: 0;
     margin-bottom: 0.5rem;
+  }
+
+  .cartModal {
+    width: 100%;
+    left: 0;
   }
 }

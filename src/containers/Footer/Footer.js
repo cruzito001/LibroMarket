@@ -33,9 +33,6 @@ export default function Footer() {
               <li>
                 <a href="#about">Nosotros</a>
               </li>
-              <li>
-                <a href="#contact">Contacto</a>
-              </li>
             </ul>
           </div>
           <div className={styles.footerSection}>
